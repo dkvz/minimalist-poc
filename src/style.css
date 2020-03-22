@@ -9,8 +9,7 @@
 }
 
 html, body {
-  height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 body {
@@ -33,21 +32,17 @@ main, header, footer {
 }
 
 main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 80vh;
 }
 
 .main-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-family: serif;
   padding: 1.2rem 0.7rem;
   text-align: center;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
 }
 
 header {
@@ -58,43 +53,19 @@ header {
   justify-content: center;
 }
 
-footer {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-}
-
 .image-grid {
-  flex: 1 0 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-
-  /*align-items: center;*/
-  /* There's also align-content */
-  /*max-width: 100%;*/
-  /*max-height: 400px;*/
-}
-
-/*.image-grid > * {
+  height: 80%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.image-grid img {
-  width: 100%;
-}*/
+.image-row {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.image-grid > * {
-  /* It doesn't work witout max-width here*/
-  max-width: 100%;
-  /*
-  So on Chrome, you have to set the image height
-  to 25% or it takes 100% of the actual set height for
-  the WHOLE grid container.
-  I don't know what's going on but there's a good chance
-  that's the problem.
-  */
-  /*height: 25%;*/
+.image-row img {
+  height: 100%;
 }
