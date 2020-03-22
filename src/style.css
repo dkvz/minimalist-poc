@@ -64,12 +64,12 @@ footer {
 }
 
 .image-grid {
-  flex: 1;
+  flex: 1 0 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   justify-items: center;
-  
+
   /*align-items: center;*/
   /* There's also align-content */
   /*max-width: 100%;*/
@@ -89,5 +89,12 @@ footer {
 .image-grid > * {
   /* It doesn't work witout max-width here*/
   max-width: 100%;
-  height: 100%;
+  /*
+  So on Chrome, you have to set the image height
+  to 25% or it takes 100% of the actual set height for
+  the WHOLE grid container.
+  I don't know what's going on but there's a good chance
+  that's the problem.
+  */
+  /*height: 25%;*/
 }
