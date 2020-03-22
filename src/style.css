@@ -10,6 +10,7 @@
 
 html, body {
   height: 100vh;
+  max-height: 100vh;
 }
 
 body {
@@ -63,15 +64,16 @@ footer {
 }
 
 .image-grid {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   justify-items: center;
+  
   /*align-items: center;*/
   /* There's also align-content */
-  width: 100%;
-  /*height: auto;
-  max-height: 400px;*/
+  /*max-width: 100%;*/
+  /*max-height: 400px;*/
 }
 
 /*.image-grid > * {
