@@ -22,5 +22,15 @@ Yes, the following works with automatic fallback, I ditched IE6->9 on purpose:
 }
 ```
 
+## Social icons
+I think I had some for another website.
+
+I need:
+- Github
+- Email
+
+## Favicon
+Should be a two letter thing in a circle, I'll make it later.
+
 # TODO
 - [ ] Try main title in Italic when trying out fonts
