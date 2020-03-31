@@ -34,3 +34,4 @@ Should be a two letter thing in a circle, I'll make it later.
 
 # TODO
 - [ ] Try main title in Italic when trying out fonts
+- [ ] Change the email for the social thiny thing

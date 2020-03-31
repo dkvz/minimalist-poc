@@ -102,7 +102,7 @@ main, header, footer {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-family: serif;
-  padding: 0.7rem 0.7rem;
+  padding: 0.7rem;
   line-height: 2.2rem;
   opacity: 0;
   animation: opacity 1s ease-in-out 0.7s forwards;
@@ -114,6 +114,21 @@ main, header, footer {
   font-size: 1.55rem;
   border-bottom: 2px solid var(--color-primary);
   animation: translate-and-opacity 0.7s forwards ease-in-out;
+}
+
+.social {
+  margin-top: 2.35rem;
+  padding: 0.45rem;
+  border: 2px solid var(--color-primary);
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0;
+  animation: opacity 1s ease-in-out 0.7s forwards;
+}
+
+.social a, .social img {
+  display: block;
 }
 
 .image-grid {
@@ -229,6 +244,10 @@ main, header, footer {
 
   .hero hr {
     height: 15%;
+  }
+
+  .social {
+    display: flex;
   }
 
 }
