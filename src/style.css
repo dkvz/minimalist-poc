@@ -54,7 +54,7 @@ main, header, footer {
   padding: 0.5rem;
 }
 
-main {
+.hero main {
   height: 80vh;
 }
 
@@ -193,4 +193,15 @@ main {
 @keyframes translate-right {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(0); }
+}
+
+@media (min-width: 900px) {
+
+  .hero main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
 }
