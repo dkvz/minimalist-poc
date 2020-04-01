@@ -187,6 +187,10 @@ main, header, footer {
   font-weight: bold;
 }
 
+.menu {
+  min-height: 100vh;
+}
+
 @keyframes scroll-down {
   0% { transform: translateY(0px); }
   50% { transform: translateY(4px); }
@@ -252,6 +256,11 @@ main, header, footer {
 
   .social {
     display: flex;
+  }
+
+  .menu {
+    border-left: 12% solid #000;
+    border-right: 12% solid #000;
   }
 
 }
