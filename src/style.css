@@ -131,6 +131,10 @@ main, header, footer {
   display: block;
 }
 
+.social a:hover {
+  opacity: 0.75;
+}
+
 .image-grid {
   height: 75%;
   display: flex; 
