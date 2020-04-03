@@ -33,5 +33,6 @@ I need:
 Should be a two letter thing in a circle, I'll make it later.
 
 # TODO
+- [ ] For the collapsable sections in the menu, add all the aria stuff related to collapsable
 - [ ] Try main title in Italic when trying out fonts
 - [ ] Change the email for the social thiny thing

@@ -1,6 +1,7 @@
 :root {
   --color-primary: #000;
   --color-secondary: #fff;
+  --color-light: #aaa;
   --color-accents: #ffcc00;
   --main-font: 'Nunito', sans-serif;
 }
@@ -29,6 +30,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -152,6 +157,8 @@ main, header, footer {
 }
 
 .scroll-down {
+  display: block;
+  text-decoration: none;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -187,8 +194,40 @@ main, header, footer {
   font-weight: bold;
 }
 
-.menu {
+.menu-page {
   min-height: 100vh;
+}
+
+.menu, .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > li > ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.menu-item-big,
+.menu-item-subsection {
+  display: block;
+  text-decoration: none;
+}
+
+.menu-item-big {
+  font-size: 2rem;
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  margin-bottom: 1rem;
+  padding: 0 0 0 0.6rem;
+  font-weight: bold;
+}
+
+.menu-item-subsection {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px dashed var(--color-light);
 }
 
 @keyframes scroll-down {
@@ -258,9 +297,9 @@ main, header, footer {
     display: flex;
   }
 
-  .menu {
-    border-left: 12% solid #000;
-    border-right: 12% solid #000;
+  .menu-page {
+    border-left: 10vw solid #000;
+    border-right: 10vw solid #000;
   }
 
 }
