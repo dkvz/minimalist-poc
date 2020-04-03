@@ -32,6 +32,14 @@ I need:
 ## Favicon
 Should be a two letter thing in a circle, I'll make it later.
 
+## Collapsible
+It would be cool to have an icon that rotates when we open the collapsible.
+
+I think I'm going to use an invisible checkbox + label and just CSS.
+
+-> I need to add an outline
+-> What is visibility "collapse"?
+
 # TODO
 - [ ] For the collapsable sections in the menu, add all the aria stuff related to collapsable
 - [ ] Try main title in Italic when trying out fonts

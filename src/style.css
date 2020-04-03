@@ -220,14 +220,36 @@ main, header, footer {
   color: var(--color-primary);
   border-bottom: 3px solid var(--color-primary);
   margin-bottom: 1rem;
-  padding: 0 0 0 0.6rem;
+  padding: 0 0 0 0.3rem;
   font-weight: bold;
 }
 
 .menu-item-subsection {
+  display: flex;
+  align-items: center;
   font-size: 1.4rem;
+  padding-bottom: 0.3rem;
   margin-bottom: 0.5rem;
   border-bottom: 2px dashed var(--color-light);
+}
+
+.menu-item-subsection > img {
+  padding-right: 0.35rem;
+  height: 22px;
+  width: 22px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.toggle input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.collapsible {
+  height: 0;
+  overflow: hidden;
 }
 
 @keyframes scroll-down {
