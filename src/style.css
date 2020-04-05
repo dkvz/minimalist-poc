@@ -209,10 +209,25 @@ main, header, footer {
   margin-bottom: 1.4rem;
 }
 
+.submenu {
+  font-size: 1.2rem;
+}
+
+.submenu a {
+  color: var(--color-primary);
+  transition: all 0.6s;
+}
+
+.submenu a:hover {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
 .menu-item-big,
 .menu-item-subsection {
   display: block;
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 .menu-item-big {
@@ -233,6 +248,10 @@ main, header, footer {
   border-bottom: 2px dashed var(--color-light);
 }
 
+.menu-item-subsection:hover {
+  color: var(--color-light);
+}
+
 .menu-item-subsection > img {
   padding-right: 0.35rem;
   height: 22px;
@@ -243,13 +262,49 @@ main, header, footer {
   cursor: pointer;
 }
 
-.toggle input[type="checkbox"] {
+.toggle + input[type="checkbox"] {
   visibility: hidden;
+  position: absolute;
+}
+
+input[type="checkbox"]:checked~.collapsible {
+  max-height: 100vh;
+  padding-bottom: 1rem;
 }
 
 .collapsible {
-  height: 0;
+  max-height: 0px;
   overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.3rem 0.7rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  margin-bottom: 0.9rem;
+  margin-top: 0.3rem;
+  transition: 0.2s ease-out;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.btn:active, .btn:focus {
+  border: 2px solid var(--color-light);
 }
 
 @keyframes scroll-down {
