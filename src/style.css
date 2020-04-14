@@ -47,6 +47,26 @@ body {
   font-family: var(--main-font);
 }
 
+body[data-overlay]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  /*
+  Fallback:
+  */
+  background-color: #000;
+  background-color: rgba(0,0,0,0.5);
+}
+
+body[data-overlay] {
+  overflow: hidden;
+}
+
 h1 {
   margin: 0;
 }
@@ -193,6 +213,7 @@ main, header, footer {
 }
 
 .menu, .menu ul {
+  background-color: transparent;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -309,17 +330,14 @@ input[type="checkbox"]:checked~.collapsible {
   border: 2px solid var(--color-secondary);
 }
 
-.menu-overlay, .menu-dynamic {
+.menu-dynamic {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
-}
-
-.menu-overlay {
-  background-color: rgba(0,0,0,0.7);
+  z-index: 90;
 }
 
 .d-none {
@@ -330,16 +348,24 @@ input[type="checkbox"]:checked~.collapsible {
   transform: translateX(-100%);
   transition: transform 1s cubic-bezier(0.86, 0.01, 0.77, 0.78);
   min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
 }
 
 .menu-dynamic.show .menu {
   position: relative;
   transform: translateX(0);
-  z-index: 90;
 }
 
-.menu-overlay.show {
-  display: block;
+.menu-dynamic .menu nav {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 @keyframes scroll-down {
