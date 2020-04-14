@@ -1,7 +1,7 @@
 const menuBtn = document.getElementById('menuBtn');
-const menuOverlay = document.querySelector('.menu-overlay'); 
+const menuDynamic = document.querySelector('.menu-dynamic'); 
 
 menuBtn.addEventListener('click', () => {
-  menuOverlay.classList.remove('d-none');
-  menuOverlay.classList.add('show');
+  menuDynamic.classList.remove('d-none');
+  menuDynamic.classList.add('show');
 });

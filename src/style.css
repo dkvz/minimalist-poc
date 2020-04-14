@@ -309,32 +309,37 @@ input[type="checkbox"]:checked~.collapsible {
   border: 2px solid var(--color-secondary);
 }
 
-.menu-overlay {
+.menu-overlay, .menu-dynamic {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.7);
   overflow: hidden;
 }
 
-.menu-overlay.show {
-  display: block;
+.menu-overlay {
+  background-color: rgba(0,0,0,0.7);
 }
 
-.menu-overlay .menu {
+.d-none {
+  display: none;
+}
+
+.menu-dynamic .menu {
   transform: translateX(-100%);
   transition: transform 1s cubic-bezier(0.86, 0.01, 0.77, 0.78);
   min-height: 100%;
 }
 
-.menu-overlay.show .menu {
+.menu-dynamic.show .menu {
+  position: relative;
   transform: translateX(0);
+  z-index: 90;
 }
 
-.d-none {
-  display: none;
+.menu-overlay.show {
+  display: block;
 }
 
 @keyframes scroll-down {
