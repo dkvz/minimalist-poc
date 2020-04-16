@@ -67,8 +67,42 @@ body[data-overlay] {
   overflow: hidden;
 }
 
-h1 {
+h1, h2, h3, h4 {
   margin: 0;
+}
+
+.separator {
+  margin: 1rem 0;
+  border-radius: 5px;
+  display: flex;
+  padding: 0.6rem 0.2rem;
+  background-color: var(--color-primary);
+  align-items: center;
+  justify-content: center;
+}
+
+.separator hr {
+  width: 10%;
+  height: 0.6rem;
+  border: none;
+  background-color: var(--color-secondary);
+}
+
+.project-title {
+  margin-top: 1rem;
+  font-size: 4rem;
+  text-align: right;
+  font-weight: bolder;
+  border-bottom: 0.5rem double var(--color-primary);
+  color: var(--color-primary);
+  padding-bottom: 0.7rem;
+  text-align: right;
+}
+
+.project-subtitle {
+  font-size: 2.2rem;
+  font-style: italic;
+  margin-top: 0.5rem;
 }
 
 header {
