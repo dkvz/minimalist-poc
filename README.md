@@ -47,3 +47,5 @@ I think I'm going to use an invisible checkbox + label and just CSS.
 - [ ] Try main title in Italic when trying out fonts
 - [ ] Change the email for the social thiny thing
 - [ ] I could add one of my yellow icons at random to the menu button
+- [x] Change the selection color
+- [ ] I need a language selector
