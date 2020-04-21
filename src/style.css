@@ -131,6 +131,12 @@ main, header, footer {
   height: 80vh;
 }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex-center, .image-row {
   display: flex;
   justify-content: center;
@@ -353,7 +359,7 @@ input[type="checkbox"]:checked~.collapsible {
 .btn {
   display: inline-block;
   font-family: var(--main-font);
-  border-radius: 5%;
+  border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.3rem;
@@ -444,6 +450,10 @@ input[type="checkbox"]:checked~.collapsible {
   margin: 0.4rem 0;
 }
 
+.card-text h1 {
+  font-size: 1.5rem;
+}
+
 .card-image {
   display: flex;
   background-color: var(--color-primary);
@@ -526,9 +536,9 @@ input[type="checkbox"]:checked~.collapsible {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: initial;
-    max-width: 900px;
+    /*max-width: 900px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto;*/
   }
 
   .card-image img, .card-image a {
