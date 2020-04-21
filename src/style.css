@@ -427,13 +427,36 @@ input[type="checkbox"]:checked~.collapsible {
   column-gap: 2.2rem;
 }
 
-.card {
-  border: 0.4rem solid var(--color-primary);
+.card, .description-card {
+  border: 6px solid var(--color-primary);
   color: var(--color-primary);
   background-color: var(--color-secondary);
-  margin: 1.2rem 0;
   display: grid;
+}
+
+.card {
   grid-template-rows: auto 1fr;
+  margin: 1.2rem 0;
+}
+
+.description-container {
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.description-card {
+  grid-template-columns: 1fr auto;
+  text-align: initial;
+}
+
+.description-card > * {
+  padding: 0.3rem 1.4rem;
+  font-size: 1.3rem;
+}
+
+.description-card > :nth-child(odd) {
+  background-color: var(--color-light);
+  font-weight: bold;
 }
 
 .card-image img, .card-image a {
@@ -554,6 +577,10 @@ input[type="checkbox"]:checked~.collapsible {
 
   .card > .card-image:nth-child(even) {
     justify-content: end;
+  }
+
+  .description-card {
+    grid-template-columns: 1fr auto 1fr auto;
   }
 
 }

@@ -41,6 +41,7 @@ I think I'm going to use an invisible checkbox + label and just CSS.
 -> What is visibility "collapse"?
 
 # TODO
+- [ ] Need a link style for the article page
 - [ ] Test the noscript menu in article.html
 - [ ] For the collapsable sections in the menu, add all the aria stuff related to collapsable
 - [ ] Each case study should have a link to the next one
