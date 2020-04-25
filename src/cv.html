@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist POF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <noscript><a href="index.html#menu">MENU</a></noscript>
+    <button id="menuBtn" class="btn">MENU</button>
+  </header>
+
+  <div class="menu-dynamic d-none">
+    <div id="menu" class="menu">
+      <nav>
+
+        <div class="text-right">
+          <button class="btn" id="closeMenuBtn" title="Close menu">X</button>
+        </div>
+
+        <ul>
+          <li>
+            <div class="menu-item-big">Some case studies</div>
+            <ul>
+              <li class="text-center">
+                <a href="#" class="btn">Start the tour&nbsp;!</a>
+              </li>
+              <li>
+                <label for="sec1" class="menu-item-subsection toggle">
+                  <img src="../assets/img/triangle-down.svg" alt="Triangle">
+                  Very interesting section
+                </label>
+                <input type="checkbox" aria-hidden="true" id="sec1">
+                <ul class="collapsible submenu">
+                  <li><a href="#">Subsection 1</a></li>
+                  <li><a href="#">Subsection 2</a></li>
+                  <li><a href="#">Subsection 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <label for="sec2" class="menu-item-subsection toggle">
+                  <img src="../assets/img/triangle-down.svg" alt="Triangle">
+                  Another section
+                </label>
+                <input type="checkbox" aria-hidden="true" id="sec2">
+                <ul class="collapsible submenu">
+                  <li><a href="#">Subsection 1</a></li>
+                  <li><a href="#">Subsection 2</a></li>
+                  <li><a href="#">Subsection 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <label for="sec3" class="menu-item-subsection toggle">
+                  <img src="../assets/img/triangle-down.svg" alt="Triangle">
+                  Third section
+                </label>
+                <input type="checkbox" aria-hidden="true" id="sec3">
+                <ul class="collapsible submenu">
+                  <li><a href="#">Subsection 1</a></li>
+                  <li><a href="#">Subsection 2</a></li>
+                  <li><a href="#">Subsection 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-item-big">Scrappadoodle Pitae</div>
+            <ul>
+              <li><a class="menu-item-subsection" href="#">My thing</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-item-big">Source code & Social</div>
+            <ul>
+              <li><a href="#" class="menu-item-subsection">My Github</a></li>
+              <li><a href="#" class="menu-item-subsection">Some weird blog</a></li>
+              <li><a href="https://codepen.io/dkvz" class="menu-item-subsection">My Codepen</a></li>
+              <li>
+                <div class="menu-item-subsection">My email: [potato@pants.org]</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+  <main class="container">
+    
+    <div class="text-center">
+      <div class="description-container">
+        <div class="name-card">
+          <div><b>Franck Potates</b></div>
+          <div>28 years old</div>
+          <div>Jamon, Spain</div>
+        </div>
+      </div>  
+    </div>
+    
+    <div class="text-center">
+      <div class="description-container">
+        <div class="description-card">
+          <div>Contact</div><div>franck@pants.com</div>
+          <div>Website</div>
+          <div>
+            <a href="https://dkvz.eu" target="_blank" rel="noopener noreferrer">https://dkvz.eu</a>
+          </div>
+          <div>Languages</div><div>Spanish, English</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="separator">
+      <hr>
+    </div>
+
+    <h2>Experience</h2>
+    <section class="cv-section">
+      <h3>Super pants factory</h3>
+      <p>Jamon sandwich</p>
+      <p>Jamon sandwich</p>
+      <h3>Cat breeder (self-employed)</h3>
+      <p>Jamon sandwich</p>
+      <p>Jamon sandwich</p>
+      <p>Jamon sandwich</p>
+    </section>
+
+    <h2>Education</h2>
+    <section class="cv-section">
+      <h3>Super pants factory</h3>
+      <p>Jamon sandwich</p>
+      <p>Jamon sandwich</p>
+      <h3>Cat breeder (self-employed)</h3>
+      <p>Jamon sandwich</p>
+      <p>Jamon sandwich</p>
+      <p>Jamon sandwich</p>
+    </section>
+
+  </main>
+
+  <script src="article.js"></script>
+
+</body>
+
+</html>
