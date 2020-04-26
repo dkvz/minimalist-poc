@@ -87,7 +87,7 @@ a {
 }
 
 a:hover, a:active {
-  color: var(--color-accents);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -665,6 +665,15 @@ input[type="checkbox"]:checked~.collapsible {
 
   .description-card {
     grid-template-columns: 1fr auto 1fr auto;
+  }
+
+  .hide-on-larger {
+    display: none;
+  }
+
+  .cv-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
   }
 
 }
