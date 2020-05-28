@@ -277,6 +277,10 @@ main, header, footer {
   z-index: 50;
 }
 
+a.scroll-down:hover {
+  color: var(--color-secondary);
+}
+
 .scroll-down:active, .scroll-down:focus {
   outline: 5px solid #ffcc00;
 }
